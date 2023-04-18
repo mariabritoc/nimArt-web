@@ -10,28 +10,33 @@
   font-family: 'Montserrat', sans-serif;
   }
 
+  /*LOGO NAV*/
   .logo{
     height: 50px;
     width: 60px;
   }
 
+/*LOGO FOOTER*/
   .logo2{
     height: 80px;
     width: auto;
   }
 
+  /*POSICION DEL SEARCH*/
   .d-flex{
     position: absolute;
     right: 20px;
 }
 
+
+/*MEDIDAS IMAGEN CARROUSEL*/
 .d-block.w-100{
   width: 1245px;
   height: 700px;
   object-fit: cover;
-  text-align: center;
-  
+  text-align: center; 
 }
+
 
 hr{
   color: aliceblue;
@@ -41,6 +46,7 @@ hr{
   padding-bottom: 20px;
 }*/
 
+/*NAV SECUNDARIO*/
 .breadcrumb {
   color: #4a4a4a;
   display: inline-block;
@@ -50,17 +56,21 @@ hr{
   margin-top: 60px;
 }
 
+
+/* LINK DE NAV SECUNDARIO*/
 .link2{
   color: #4a4a4a;
   text-decoration: none; /*quitar subrayado link*/
 }
 
+/*LINK DE FOOTER*/
 .link3{
   color: white;
   text-decoration: none; /*quitar subrayado link*/
 }
 
 
+/*LINEAS DEBAJO DEL NAV*/
 
 .collection_sidebar {
   border-top: 1px solid #e5e5e5;
@@ -100,14 +110,14 @@ hr{
   
 }
 
+
  
 .collage wau {
     width: 100%;
     height: 80%;
     object-fit: cover;
+    
   }
-
-
 
 
 .card{
@@ -128,7 +138,9 @@ hr{
 hr{color: black;}
 
 .container{
+  display: flex;;
   text-align: center;
+  padding: 25px;
 }
 
 .border-title {
@@ -139,10 +151,7 @@ hr{color: black;}
   margin-top: 40px;}
 
 
-.fotoduoc{
-  height: 200px;
-  width: 200px;
-}
+
 
 .rounded.float-end{
   
@@ -159,14 +168,10 @@ hr{color: black;}
   flex-direction:row;
   align-items: center;
   justify-content: center;
-  margin: 20px;
+  padding: 20px;
 }
 
-.imgduoc{
-  width: 50%;
-  height: auto;
-  margin-right: 20px;
-}
+
 
 
 .text{
@@ -179,16 +184,42 @@ hr{color: black;}
   
 }
 
-.imgduoc2{
-  height: 200px;
-  width: 200px;
-  
+/*STYLE IMAGE*/
+
+.arroz h3 {
+  text-align: center;
+  margin-top: 130px;
+  font-size: 1.5em;
 }
 
-.imgduoc3{
-  height: 200px;
-  width: 200px;
-  
+.arroz p {
+  text-align: justify-all;
+  margin-top: 10px;
+  font-size: 0.9em;
+  margin: 10px;
+}
+
+/*dimensiones en base al id del video*/
+#imgduoc {
+  width: 100%;
+  max-width: 600px;
+  float: right;
+  margin: 20px;
+}
+
+@media (max-width: 414px) {
+
+  imgduoc {
+    float: none;
+    width: 250px;
+    height: 150px;
+    align-items: center;
+  }
+  .arroz p{
+    font-size: 18px;
+    position: relative;
+  }
+
 }
 
 

@@ -105,14 +105,14 @@ html {
 /*dimensiones en base al id del video*/
 #vid1 {
   width: 100%;
-  max-width: 600px;
+  max-width: 630px;
   float: right;
   margin: 20px;
 }
 
 #vid2 {
   width: 100%;
-  max-width: 600px;
+  max-width: 630px;
   float: left;
   margin: 20px;
 }
@@ -129,13 +129,19 @@ html {
     height: 150px;
     align-items: center;
   }
-  .contariner p{
+  .container p{
     font-size: 18px;
   }
 
 }
 
+
+/* LINK FOOTER*/
 .link3{
     color: white;
     text-decoration: none; /*quitar subrayado link*/
+  }
+
+  hr{
+    color: black;
   }
