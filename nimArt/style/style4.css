@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
 
 .logo{
     height: 50px;
     width: 60px;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 
 *{
   margin: 0;
@@ -12,7 +12,7 @@
 }
 
 body{
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Montserrat', sans-serif;
     background-color: black;
     color: white;
     overflow-x: hidden;
@@ -137,6 +137,7 @@ html{
     height: 100%;
     margin: 0;
     padding: 0;
+    
 }
 
 /* footer */
@@ -144,6 +145,7 @@ html{
     min-height: calc(100% - 60px);
     /* ajusta el margen inferior para dejar espacio para el footer */
     margin-bottom: 60px;
+    font-family: 'Montserrat', sans-serif;
   }
 
 .logo2{
