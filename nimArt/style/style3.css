@@ -58,9 +58,10 @@ html {
   margin-top: 60px;
 }
 
+ /*quitar subrayado link*/
 .link2{
   color: #4a4a4a;
-  text-decoration: none; /*quitar subrayado link*/
+  text-decoration: none;
 }
 
 .collection_sidebar {
