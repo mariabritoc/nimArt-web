@@ -1,9 +1,5 @@
-// SOLO JS SIN JQUERY VALIDANDO TODOS LOS CAMPOS DE UNA
-// TAMPOCO FUNCIONA EL SWEETALERT :c
 
-
-
-// Función para vaalidar todo lo obtenido
+// Función para validar todo lo obtenido
 function validacionesExitosas() {
     var nombreRegExp = /^[A-Za-z\s]+$/;
     var emailRegExp = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -77,7 +73,7 @@ btnEnviar.addEventListener("click", function(event) {
   // Validar el formulario
   if (validacionesExitosas()) {
     // Mostrar alerta de envío exitoso 
-   // alert("enviado con exito");                   //FUNCIONA UNA ALERTA SIMPLE PERO NO LA SWEETALERT :c
+   // alert("enviado con exito");                   
    formNombre.value = "";
    formEmail.value = "";
    formMovil.value = "";
