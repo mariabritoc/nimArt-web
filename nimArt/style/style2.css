@@ -31,8 +31,76 @@ body {
   padding-top: 30px;
 }
 
+
+#swal2-title {
+  font-family: inherit;
+}
+
+/*CAMBIA EL FONDO DE LA SWEET ALERT*/
+.swal2-popup {
+  background-color: #fff;
+}
+
+button.swal2-confirm.swal2-styled {
+  background-color: rgb(223, 189, 17);
+}
+
+.swal2-actions {
+  background-color: rgb(244, 204, 6)00;
+}
+
+div.swal2-deny.swal2-styled {
+  background-color: rgb(244, 204, 6)00;
+}
+
+div.swal2-cancel.swal2-styled {
+  background-color: rgb(244, 204, 6)00;
+}
+
+
+/* FORMULARIO*/
+
+/*ANIMACION FORMULARIO*/
+.jello-horizontal {
+  animation: jello-horizontal .9s linear both
+}
+
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1)
+  }
+
+  30% {
+    transform: scale3d(1.25, .75, 1)
+  }
+
+  40% {
+    transform: scale3d(.75, 1.25, 1)
+  }
+
+  50% {
+    transform: scale3d(1.15, .85, 1)
+  }
+
+  65% {
+    transform: scale3d(.95, 1.05, 1)
+  }
+
+  75% {
+    transform: scale3d(1.05, .95, 1)
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1)
+  }
+}
+
+
+
+
+
 .form {
-  background-image: url(../imagenes/lienzofinal.jpg);  
+  background-image: url(../imagenes/lienzofinal.jpg);
   background-position: center;
   width: 90%;
   margin-top: 40px;
@@ -48,21 +116,21 @@ body {
 .form__container {
   width: 100%;
   display: grid;
-  gap: 1em;
+  gap: .5em;
   grid-auto-columns: 100%
 }
 
 .form__title {
   text-align: center;
-  font-size: 1.9rem;
-  margin-bottom: .4em;
+  font-size: 2rem;
+  margin-bottom: .4rem;
 }
 
 .form__input {
   font-family: inherit;
-  font-size: 1rem;
-  /*es igual a 16px*/
-  /*es relativo al tamaÃ±o de fuente o del padre en este caso es igual a 16px*/
+  font-size: .8rem;
+  /*.8REM es igual a 16px*/
+  /*es relativo al tamaño de fuente o del padre en este caso es igual a 16px*/
   padding: .8em 1em;
   outline: none;
   border: none;
@@ -70,12 +138,51 @@ body {
   border-radius: 0.2emp;
 }
 
+.form__input:hover {
+  cursor: pointer;
+  border-color: yellow;
+
+}
+
+
+
+
+label {
+  padding-top: 8px;
+  font-size: 15px;
+}
+
+.errores {
+  display: none;
+  font-size: 14px;
+  color: red;
+  font-size: 10px;
+  position: inherit;
+}
+
+
 .form__input--message {
   resize: none;
   padding: 1.8em 1em;
   margin-bottom: .5em;
-  
 }
+
+textarea {
+  min-height: 100px;
+  resize: none;
+  outline: none;
+  border: none;
+  border: 1px solid #bbb0b0;
+  border-radius: 0.2emp;
+}
+
+textarea:hover {
+  cursor: pointer;
+  border-color: yellow;
+}
+
+
+
 
 .form__cta {
   font-family: inherit;
@@ -90,15 +197,7 @@ body {
   font-weight: 400;
 }
 
-@media (max-width:450) {
-  .form {
-    padding: 3.5em 1em;
-  }
-}
 
-html {
-  height: 100;
-}
 
 
 .logo {
@@ -106,23 +205,41 @@ html {
   width: 60px;
 }
 
-.logo2{
+.logo2 {
   height: 80px;
   width: auto;
 }
 
 
-.link2{
+/*Links*/
+.link2 {
   color: #4a4a4a;
-  text-decoration: none; /*quitar subrayado link*/
+  text-decoration: none;
+  /*quitar subrayado link*/
 }
 
-.link3{
+.link3 {
   color: white;
-  text-decoration: none; /*quitar subrayado link*/
+  text-decoration: none;
 }
 
-hr{
+hr {
   color: black;
 }
 
+/*RESPONSIVA*/
+@media (max-width:450) {
+  .form {
+    padding: 3.5em 1em;
+  }
+}
+/*
+@media  (max-width: 768px) {
+  #tiform {
+    font-size: 1.5em; 
+  }
+}*/
+
+html {
+  height: 100%;
+}

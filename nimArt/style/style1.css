@@ -10,33 +10,32 @@
   font-family: 'Montserrat', sans-serif;
   }
 
-  /*LOGO NAV*/
+ /*LOGO NAV*/
   .logo{
     height: 50px;
     width: 60px;
   }
 
-/*LOGO FOOTER*/
+  /*LOGO FOOTER*/
   .logo2{
     height: 80px;
     width: auto;
   }
 
-  /*POSICION DEL SEARCH*/
+   /*POSICION DEL SEARCH*/
   .d-flex{
     position: absolute;
     right: 20px;
 }
-
 
 /*MEDIDAS IMAGEN CARROUSEL*/
 .d-block.w-100{
   width: 1245px;
   height: 700px;
   object-fit: cover;
-  text-align: center; 
+  text-align: center;
+  
 }
-
 
 hr{
   color: aliceblue;
@@ -56,7 +55,6 @@ hr{
   margin-top: 60px;
 }
 
-
 /* LINK DE NAV SECUNDARIO*/
 .link2{
   color: #4a4a4a;
@@ -71,7 +69,6 @@ hr{
 
 
 /*LINEAS DEBAJO DEL NAV*/
-
 .collection_sidebar {
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
@@ -110,14 +107,14 @@ hr{
   
 }
 
-
  
 .collage wau {
     width: 100%;
     height: 80%;
     object-fit: cover;
-    
   }
+
+
 
 
 .card{
@@ -138,9 +135,7 @@ hr{
 hr{color: black;}
 
 .container{
-  display: flex;;
   text-align: center;
-  padding: 25px;
 }
 
 .border-title {
@@ -149,8 +144,6 @@ hr{color: black;}
   width: 100%;
   margin-bottom: 40px;
   margin-top: 40px;}
-
-
 
 
 .rounded.float-end{
@@ -163,15 +156,6 @@ hr{color: black;}
 
 }
 
-.texto1 {
-  display: flex;
-  flex-direction:row;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-
-
 
 
 .text{
@@ -182,6 +166,99 @@ hr{color: black;}
   flex-direction: column;
   margin: 20px;
   
+}
+
+
+
+/* Estilos CSS para el collage */
+
+.collage-item {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  position: relative;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 600px;
+  max-height: 80%;
+}
+
+/* Agrega más estilos CSS según sea necesario */
+
+article{
+  position: relative;
+  
+  transition: all .3s ease;
+}
+
+article img:first-child{
+  box-shadow: 0 60px 60px
+  -60px #ffc107;
+  border-radius: 4px;
+  object-fit: cover;
+  width: 70%;
+
+}
+
+article img:last-child{
+  position: absolute;
+  width: 350px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translateY(25%);
+  transition:  .3s ease;
+  opacity: 0;
+}
+
+article:hover{
+  transform: 
+    perspective(250px)
+    rotateX(10deg)
+    translateY(-5%)
+    translateZ(0);
+}
+
+article::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all .3s ease;
+}
+
+article:hover::before{
+  opacity: 1;
+}
+
+article:hover img:last-child{
+  opacity: 1;
+  transform: translateY(10%);
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
 }
 
 /*STYLE IMAGE*/
@@ -221,36 +298,3 @@ hr{color: black;}
   }
 
 }
-
-/* Para el modal*/
-
-/* Estilos CSS para el collage */
-
-.collage-item {
-  width: 200px;
-  height: 200px;
-  margin: 10px;
-  position: relative;
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 600px;
-  max-height: 80%;
-}
-
